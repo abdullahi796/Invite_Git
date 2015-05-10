@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app='inviteApp'>
-    <head>
+    <head> 
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <!-- Latest compiled and minified CSS -->
@@ -43,9 +43,9 @@
                 </div>
                 <form ng-show='formShow' ng-submit='addContact()'>
                     <h3 class='text-center'><label for="">Enter Phone Number</label></h3>
-                    <input type="text" class='col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3' ng-model='mphoneNumber' name=""/>
-                    <input id='formButton' type="submit" value="RSVP" class="btn btn-success col-md-6 col-md-offset-3 col-xs-5 col-xs-offset-1" ng-click='share()'/>
-                    <input id='formButton' type="" value="Cancel" class="btn btn-danger col-md-6 col-md-offset-3 col-xs-5  col-xs-offset-1" ng-click='showText()'/>
+                    <input type="text" class='col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3' ng-model='mphoneNumber' name=""/>
+                    <input id='formButton' type="submit" value="RSVP" class="btn btn-success col-md-5 col-md-offset-1 col-xs-5 col-xs-offset-1" ng-click='share()'/>
+                    <input id='formButton' type="" value="Cancel" class="btn btn-danger col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5  col-xs-offset-1" ng-click='showText()'/>
                 </form>
                 <div id='share' class='col-xs-12' ng-show='showShare'>
                     <p class='text-center'>Text the link to invite friends </p>

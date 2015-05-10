@@ -1,7 +1,8 @@
 angular.module('inviteApp')
-.factory('data',function dataFactory($firebaseArray) {
+.factory('data',function dataFactory($firebaseArray,$window) {
     return function() {
-        var ref = new Firebase('https://invite.firebaseio.com/');
+        var token = $window.token;
+        var ref = new Firebase('https://invite.firebaseio.com/' + token);
         return $firebaseArray(ref);
     }
     

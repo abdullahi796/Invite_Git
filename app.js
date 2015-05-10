@@ -7,11 +7,11 @@ angular.module('inviteApp',['firebase',])
     $scope.showShare = false;
     $scope.mphoneNumber = 0;
     $scope.token = $window.token;
-    
+     
     alert($scope.token)
     
     $scope.contact = {
-        number: $scope.attendees.length,
+        number: $scope.attendees.length + 1,
         phoneNumber: 0
     };
     $scope.toggle = function() {
@@ -26,7 +26,7 @@ angular.module('inviteApp',['firebase',])
     $scope.addContact = function() {
         $scope.attendees.$add(
                 {
-                    number: $scope.attendees.length,
+                    number: $scope.attendees.length + 1,
                     mphoneNumber: $scope.mphoneNumber
                 }
           );      
