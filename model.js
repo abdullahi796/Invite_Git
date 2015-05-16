@@ -6,4 +6,4 @@ angular.module('inviteApp')
         return $firebaseArray(ref);
     }
     
-})
+})  

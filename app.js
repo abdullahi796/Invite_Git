@@ -7,13 +7,14 @@ angular.module('inviteApp',['firebase',])
     $scope.showShare = false;
     $scope.mphoneNumber = 0;
     $scope.token = $window.token;
-     
+    $scope.mLink = "https://invite-abdullahi11.c9.io/index.php?id=" + $scope.token;
     alert($scope.token)
     
     $scope.contact = {
         number: $scope.attendees.length + 1,
         phoneNumber: 0
     };
+
     $scope.toggle = function() {
             $scope.formShow = !$scope.formShow;
             $scope.showShare = !$scope.showShare;
@@ -30,7 +31,7 @@ angular.module('inviteApp',['firebase',])
                     mphoneNumber: $scope.mphoneNumber
                 }
           );      
-          $scope.mphoneNumber = 0;
+            $scope.mphoneNumber = 0;
     }
     $scope.share = function() {
      $scope.formShow = !$scope.formShow;

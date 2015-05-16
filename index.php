@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="main.css" type="text/css" />
         <!-- AngularJS -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-        
+         
         <!-- Firebase -->
         <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
         
@@ -50,7 +50,7 @@
                 <div id='share' class='col-xs-12' ng-show='showShare'>
                     <p class='text-center'>Text the link to invite friends </p>
                     <p class='text-center'>Copy the link</p>
-                    <p id='link' class='text-center'>https://invite-abdullahi11.c9.io/index.php?id=abdullahi11</p>
+                    <p id='link' class='text-center'>{{mLink}}</p>
                 </div>
             </div>
         </div>
