@@ -1,7 +1,7 @@
 angular.module('inviteApp',['firebase',])
 .controller('mainController',function($scope,data,$window) {
     $scope.attendees = data();
-    $scope.info = "The party is at May 09. The address is 550 s 68th ave"
+    $scope.info = "The party is a. The address is 550 s 68th ave"
     $scope.formShow = false;
     $scope.textShow = true;
     $scope.showShare = false;
